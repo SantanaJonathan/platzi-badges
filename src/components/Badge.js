@@ -28,4 +28,5 @@ class Badge extends React.Component {
   }
 }
 
+//asegurarse de exportarlo
 export default Badge;
