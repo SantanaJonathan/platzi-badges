@@ -7,6 +7,8 @@ import Badge from './components/Badge';
 
 const container = document.getElementById('app');
 
+//es como los atributos que les pasa el render para que se muestre
+//en badges this.props.atrbuto
 ReactDOM.render(
   <Badge
     firstName="Richard"
