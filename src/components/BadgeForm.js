@@ -33,6 +33,7 @@ class BadgeForm extends React.Component {
             />
           </div>
 
+          {/*se puede agregar type="submit" o manejarlo dentro form onSubmit={this.handleSubmit}*/}
           <button onClick={this.handleClick} className="btn btn-primary">
             Save
           </button>
