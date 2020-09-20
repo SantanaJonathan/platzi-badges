@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'bootstrap/dist/css/bootstrap.css';
 
+//importacion de bootstrap (simple) instalado por npm
+import 'bootstrap/dist/css/bootstrap.css';
+//modificaciones al bootstrap
 import './global.css';
 import Badge from './components/Badge';
 
