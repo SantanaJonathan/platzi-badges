@@ -1,12 +1,17 @@
 import React from 'react';
 
 class BadgeForm extends React.Component {
+  //se debe inicializar el estado state para poder acceder
   state = {
+    //se puede comenzar inicializando un campo
     firstName: 'Richard',
   };
 
   handleChange = e => {
+    //setState de la clase componet/se le pasa un objeto del valor a guardar
     this.setState({
+    //se guarda la informacion dentro de su respectiva llaves
+    //si es el email-> guarda email... etc
       [e.target.name]: e.target.value,
     });
   };
@@ -45,6 +50,9 @@ class BadgeForm extends React.Component {
               className="form-control"
               type="text"
               name="lastName"
+              //controlar la info ->se guardo en cada input y cada estado
+              //controlar añadiendo un pro(value)
+              //para leer el estado se utiliza this. y para escribir set.
               value={this.state.lastName}
             />
           </div>
