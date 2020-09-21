@@ -2,7 +2,9 @@ import React from 'react';
 
 class BadgeForm extends React.Component {
   // state = {};
-
+  /*levantamiento de estados-> es llevar los datos de un formulario
+  Hacia otro parte de la pagina u otro pagina en tiempo de ejecucion  
+  */
   // handleChange = e => {
   //   this.setState({
   //     [e.target.name]: e.target.value,
@@ -34,6 +36,9 @@ class BadgeForm extends React.Component {
               name="firstName"
               value={this.props.formValues.firstName}
             />
+            {/*en vez de this.state.firstname se debe poner this.props.formValues.firstName
+            Decirle que viene del formulario y enviarlo a sus respectivos atributos del form
+            */}
           </div>
 
           <div className="form-group">
