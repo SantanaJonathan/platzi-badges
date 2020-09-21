@@ -9,6 +9,7 @@ class Navbar extends React.Component {
     return (
       <div className="Navbar">
         <div className="container-fluid">
+          {/*como se implemento link hay que exportarlo arriba*/}
           <Link className="Navbar__brand" to="/">
             <img className="Navbar__brand-logo" src={logo} alt="Logo" />
             <span className="font-weight-light">Platzi</span>

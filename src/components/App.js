@@ -15,6 +15,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/badges" component={Badges} />
           <Route exact path="/badges/new" component={BadgeNew} />
+          {/*cuando no hay pagina q mostrar 404*/}
           <Route component={NotFound} />
         </Switch>
       </Layout>
