@@ -64,7 +64,7 @@ class Badges extends React.Component {
               New Badge
             </a>
           </div>
-
+          {/*Delega un componente para manejar lista de badges en BadgesList.js*/}
           <BadgesList badges={this.state.data} />
         </div>
       </div>
