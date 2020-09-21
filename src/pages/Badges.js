@@ -6,6 +6,7 @@ import confLogo from '../images/badge-header.svg';
 import BadgesList from '../components/BadgesList';
 
 class Badges extends React.Component {
+  
   constructor(props) {
     super(props);
     console.log('1. constructor()');
@@ -56,6 +57,7 @@ class Badges extends React.Component {
     }, 3000);
   }
 
+  //prop q tenia antes y los props despues
   componentDidUpdate(prevProps, prevState) {
     console.log('5. componentDidUpdate()');
     console.log({
@@ -68,9 +70,11 @@ class Badges extends React.Component {
       state: this.state,
     });
   }
-
+  //este es el momento preciso antes q se vaya el componet del Dom
+  //que salga de escena 
   componentWillUnmount() {
     console.log('6. componentWillUnmount');
+    //para limpiar el estado antes que termine los 3000 para dar paso a otro actualizandolo
     clearTimeout(this.timeoutId);
   }
 
