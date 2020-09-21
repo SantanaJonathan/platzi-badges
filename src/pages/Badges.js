@@ -1,4 +1,5 @@
 import React from 'react';
+//importar el 4to componente de react router
 import { Link } from 'react-router-dom';
 
 import './styles/Badges.css';
@@ -61,6 +62,7 @@ class Badges extends React.Component {
 
         <div className="Badges__container">
           <div className="Badges__buttons">
+            {/*aqui agregando el link con to(hacia)*/}
             <Link to="/badges/new" className="btn btn-primary">
               New Badge
             </Link>
